@@ -16,3 +16,4 @@ Then open `http://localhost:8000`.
 
 - Publication metadata: Wooseong Yang's Google Scholar profile
 - Profile image: public Google Scholar profile asset
+- Publication teasers: official project repositories and coauthor publication pages

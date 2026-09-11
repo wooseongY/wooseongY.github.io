@@ -26,13 +26,13 @@
 
     <header class="site-header">
       <nav class="nav shell" aria-label="Primary navigation">
-        <a class="brand" href="#top" aria-label="Wooseong Yang, home">
+        <a class="brand" href="index.html" aria-label="Wooseong Yang, home">
           <span class="brand-mark" aria-hidden="true">WY</span>
           <span class="brand-name">wooseongY.github.io</span>
         </a>
         <div class="nav-links">
           <a href="#news">News</a>
-          <a href="#publications">Publications</a>
+          <a href="publications.html">Publications</a>
         </div>
         <a
           class="nav-scholar"
@@ -145,22 +145,27 @@
         <div class="section-heading publications-heading reveal">
           <div>
             <h2 id="publications-title">Selected publications</h2>
-            <p>Work in robust state estimation, SLAM, and multi-modal perception.</p>
+            <p>First- and co-first-authored work.</p>
           </div>
           <a
             class="text-link"
-            href="https://scholar.google.com/citations?user=lh2KUKMAAAAJ&hl=en"
-            target="_blank"
-            rel="noreferrer"
-          >All publications on Scholar <span aria-hidden="true">↗</span></a>
+            href="publications.html"
+          >View all publications <span aria-hidden="true">→</span></a>
         </div>
 
-        <div class="publication-year reveal">
-          <div class="year-label"><span>2026</span><span>3 works</span></div>
-
+        <div class="publication-list reveal">
           <article class="paper paper-standard">
+            <figure class="paper-teaser">
+              <img
+                src="assets/img/publications/geo-rio.webp"
+                alt="Geometric constraints and uncertainty modeling for radar-inertial odometry"
+                width="946"
+                height="720"
+                loading="lazy"
+              />
+            </figure>
             <div class="paper-body">
-              <p class="venue"><span>RA-L</span> IEEE Robotics and Automation Letters 11(5)</p>
+              <p class="venue">IEEE Robotics and Automation Letters (RA-L), 2026</p>
               <h3>Geometrically-Constrained Radar-Inertial Odometry via Continuous Point-Pose Uncertainty Modeling</h3>
               <p class="authors"><strong>Wooseong Yang</strong>, Dongjae Lee, Minwoo Jung, Ayoung Kim</p>
               <div class="paper-links">
@@ -170,22 +175,19 @@
           </article>
 
           <article class="paper paper-standard">
+            <figure class="paper-teaser paper-teaser-wide">
+              <img
+                src="assets/img/publications/moana.webp"
+                alt="MOANA maritime multi-radar dataset overview"
+                width="1000"
+                height="479"
+                loading="lazy"
+              />
+            </figure>
             <div class="paper-body">
-              <p class="venue"><span>RA-L</span> IEEE Robotics and Automation Letters 11(7)</p>
-              <h3>LAPS: Improving Incremental LiDAR Mapping using Active Pooling and Sampling for Neural Distance Fields</h3>
-              <p class="authors">Dongjae Lee, <strong>Wooseong Yang</strong>, Yifu Tao, Maurice Fallon, Ayoung Kim</p>
-              <div class="paper-links">
-                <a href="https://arxiv.org/abs/2605.15496" target="_blank" rel="noreferrer">Paper ↗</a>
-                <a href="https://github.com/dongjae0107/LAPS" target="_blank" rel="noreferrer">Code ↗</a>
-              </div>
-            </div>
-          </article>
-
-          <article class="paper paper-standard">
-            <div class="paper-body">
-              <p class="venue"><span>IJRR</span> The International Journal of Robotics Research 45(2)</p>
+              <p class="venue">The International Journal of Robotics Research (IJRR), 2026</p>
               <h3>MOANA: Multi-Radar Dataset for Maritime Odometry and Autonomous Navigation Application</h3>
-              <p class="authors">Hyesu Jang<sup>*</sup>, <strong>Wooseong Yang<sup>*</sup></strong>, Hanguen Kim, Dongje Lee, et al.</p>
+              <p class="authors">Hyesu Jang<sup>*</sup>, <strong>Wooseong Yang<sup>*</sup></strong>, Hanguen Kim, Dongje Lee, Yongjin Kim, Jinbum Park, Minsoo Jeon, Jaeseong Koh, Yejin Kang, Minwoo Jung, Sangwoo Jung, Ayoung Kim</p>
               <p class="note"><sup>*</sup> Equal contribution</p>
               <div class="paper-links">
                 <a href="https://arxiv.org/abs/2412.03887" target="_blank" rel="noreferrer">Paper ↗</a>
@@ -194,14 +196,19 @@
               </div>
             </div>
           </article>
-        </div>
-
-        <div class="publication-year reveal">
-          <div class="year-label"><span>2025</span><span>5 works</span></div>
 
           <article class="paper paper-standard">
+            <figure class="paper-teaser paper-teaser-wide">
+              <img
+                src="assets/img/publications/go-rio.webp"
+                alt="Go-RIO mapping results across radar-inertial odometry methods"
+                width="1000"
+                height="504"
+                loading="lazy"
+              />
+            </figure>
             <div class="paper-body">
-              <p class="venue"><span>ICRA</span> IEEE International Conference on Robotics and Automation</p>
+              <p class="venue">IEEE International Conference on Robotics and Automation (ICRA), 2025</p>
               <h3>Ground-Optimized 4D Radar-Inertial Odometry via Continuous Velocity Integration using Gaussian Process</h3>
               <p class="authors"><strong>Wooseong Yang</strong>, Hyesu Jang, Ayoung Kim</p>
               <div class="paper-links">
@@ -211,111 +218,9 @@
             </div>
           </article>
 
-          <article class="paper paper-standard">
+          <article class="paper paper-standard no-teaser">
             <div class="paper-body">
-              <p class="venue"><span>ICRA</span> IEEE International Conference on Robotics and Automation</p>
-              <h3>GaRLIO: Gravity Enhanced Radar-LiDAR-Inertial Odometry</h3>
-              <p class="authors">Chiyun Noh, <strong>Wooseong Yang</strong>, Minwoo Jung, Sangwoo Jung, Ayoung Kim</p>
-              <div class="paper-links">
-                <a href="https://arxiv.org/abs/2502.07703" target="_blank" rel="noreferrer">Paper ↗</a>
-                <a href="https://github.com/wooseongY/GaRLIO" target="_blank" rel="noreferrer">Code ↗</a>
-              </div>
-            </div>
-          </article>
-
-          <article class="paper paper-standard">
-            <div class="paper-body">
-              <p class="venue"><span>ICRA</span> IEEE International Conference on Robotics and Automation</p>
-              <h3>HeRCULES: Heterogeneous Radar Dataset in Complex Urban Environment for Multi-Session Radar SLAM</h3>
-              <p class="authors">Hanjun Kim, Minwoo Jung, Chiyun Noh, Sangwoo Jung, Hyunho Song, <strong>Wooseong Yang</strong>, et al.</p>
-              <div class="paper-links">
-                <a href="https://arxiv.org/abs/2502.01946" target="_blank" rel="noreferrer">Paper ↗</a>
-                <a href="https://sites.google.com/view/herculesdataset" target="_blank" rel="noreferrer">Dataset ↗</a>
-              </div>
-            </div>
-          </article>
-
-          <article class="paper paper-standard">
-            <div class="paper-body">
-              <p class="venue"><span>RA-L</span> IEEE Robotics and Automation Letters 10(12)</p>
-              <h3>SHeRLoc: Synchronized Heterogeneous Radar Place Recognition for Cross-Modal Localization</h3>
-              <p class="authors">Hanjun Kim, Minwoo Jung, <strong>Wooseong Yang</strong>, Ayoung Kim</p>
-              <div class="paper-links">
-                <a href="https://arxiv.org/abs/2506.15175" target="_blank" rel="noreferrer">Paper ↗</a>
-                <a href="https://github.com/wooseongY/SHeRLoc" target="_blank" rel="noreferrer">Code ↗</a>
-              </div>
-            </div>
-          </article>
-
-          <article class="paper paper-standard">
-            <div class="paper-body">
-              <p class="venue"><span>RA-L</span> IEEE Robotics and Automation Letters 10(12)</p>
-              <h3>XPRESS: X-Band Radar Place Recognition via Elliptical Scan Shaping</h3>
-              <p class="authors">Hyesu Jang, <strong>Wooseong Yang</strong>, Ayoung Kim, Dongje Lee, Hanguen Kim</p>
-              <div class="paper-links">
-                <a href="https://arxiv.org/abs/2511.08863" target="_blank" rel="noreferrer">Paper ↗</a>
-              </div>
-            </div>
-          </article>
-        </div>
-
-        <div class="publication-year reveal">
-          <div class="year-label"><span>2024</span><span>4 works</span></div>
-
-          <article class="paper paper-standard">
-            <div class="paper-body">
-              <p class="venue"><span>ISR</span> Intelligent Service Robotics 17(2)</p>
-              <h3>LiDAR Odometry Survey: Recent Advancements and Remaining Challenges</h3>
-              <p class="authors">Dongjae Lee, Minwoo Jung, <strong>Wooseong Yang</strong>, Ayoung Kim</p>
-              <div class="paper-links">
-                <a href="https://arxiv.org/abs/2312.17487" target="_blank" rel="noreferrer">Paper ↗</a>
-              </div>
-            </div>
-          </article>
-
-          <article class="paper paper-standard">
-            <div class="paper-body">
-              <p class="venue"><span>IJRR</span> The International Journal of Robotics Research 43(12)</p>
-              <h3>HeLiPR: Heterogeneous LiDAR Dataset for Inter-LiDAR Place Recognition under Spatiotemporal Variations</h3>
-              <p class="authors">Minwoo Jung, <strong>Wooseong Yang</strong>, Dongjae Lee, Hyeonjae Gil, Giseop Kim, Ayoung Kim</p>
-              <div class="paper-links">
-                <a href="https://arxiv.org/abs/2309.14590" target="_blank" rel="noreferrer">Paper ↗</a>
-                <a href="https://sites.google.com/view/heliprdataset" target="_blank" rel="noreferrer">Dataset ↗</a>
-                <a href="https://github.com/wooseongY/HeLiPR-File-Player-ROS2" target="_blank" rel="noreferrer">Code ↗</a>
-              </div>
-            </div>
-          </article>
-
-          <article class="paper paper-standard">
-            <div class="paper-body">
-              <p class="venue"><span>IJRR</span> The International Journal of Robotics Research 43(6)</p>
-              <h3>TRansPose: Large-Scale Multispectral Dataset for Transparent Object</h3>
-              <p class="authors">Jeongyun Kim, Myung-Hwan Jeon, Sangwoo Jung, <strong>Wooseong Yang</strong>, Minwoo Jung, Jaeho Shin, Ayoung Kim</p>
-              <div class="paper-links">
-                <a href="https://arxiv.org/abs/2307.05016" target="_blank" rel="noreferrer">Paper ↗</a>
-                <a href="https://sites.google.com/view/transpose-dataset" target="_blank" rel="noreferrer">Dataset ↗</a>
-              </div>
-            </div>
-          </article>
-
-          <article class="paper paper-standard">
-            <div class="paper-body">
-              <p class="venue"><span>IROS</span> IEEE/RSJ International Conference on Intelligent Robots and Systems</p>
-              <h3>Co-RaL: Complementary Radar-Leg Odometry with 4-DoF Optimization and Rolling Contact</h3>
-              <p class="authors">Sangwoo Jung, <strong>Wooseong Yang</strong>, Ayoung Kim</p>
-              <div class="paper-links">
-                <a href="https://arxiv.org/abs/2407.05820" target="_blank" rel="noreferrer">Paper ↗</a>
-                <a href="https://github.com/SangwooJung98/Co-RaL-Dataset" target="_blank" rel="noreferrer">Dataset ↗</a>
-              </div>
-            </div>
-          </article>
-        </div>
-
-        <div class="publication-year reveal">
-          <div class="year-label"><span>2023</span><span>1 work</span></div>
-          <article class="paper paper-standard">
-            <div class="paper-body">
-              <p class="venue"><span>JKROS</span> Journal of Korea Robotics Society 18(3)</p>
+              <p class="venue">Journal of Korea Robotics Society, 2023</p>
               <h3>Noise Removal of FMCW Scanning Radar for Single Sensor Performance Improvement in Autonomous Driving</h3>
               <p class="authors"><strong>Wooseong Yang</strong>, Myung-Hwan Jeon, Ayoung Kim</p>
               <div class="paper-links">

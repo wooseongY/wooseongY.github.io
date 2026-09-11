@@ -20,7 +20,12 @@ if (reducedMotion || !("IntersectionObserver" in window)) {
 }
 
 const sections = [...document.querySelectorAll("main section[id]")];
-const navLinks = [...document.querySelectorAll(".nav-links a")];
+const navLinks = [...document.querySelectorAll(".nav-links a")].filter(
+  (link) =>
+    link.hash &&
+    link.pathname.replace(/\/index\.html$/, "/") ===
+      window.location.pathname.replace(/\/index\.html$/, "/"),
+);
 
 if ("IntersectionObserver" in window) {
   const sectionObserver = new IntersectionObserver(
@@ -43,5 +48,5 @@ if ("IntersectionObserver" in window) {
   sections.forEach((section) => sectionObserver.observe(section));
 }
 
-document.querySelector("#year").textContent = new Date().getFullYear();
-
+const copyrightYear = document.querySelector("#year");
+if (copyrightYear) copyrightYear.textContent = new Date().getFullYear();
