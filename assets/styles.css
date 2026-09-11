@@ -1272,3 +1272,17 @@ body::before {
     gap: 12px 20px;
   }
 }
+
+.section-kicker {
+  display: block;
+}
+
+.section-kicker p {
+  margin: 0;
+  padding-top: 14px;
+}
+
+.paper,
+.paper-featured {
+  grid-template-columns: minmax(0, 1fr);
+}

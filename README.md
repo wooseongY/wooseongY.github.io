@@ -16,5 +16,3 @@ Then open `http://localhost:8000`.
 
 - Publication metadata: Wooseong Yang's Google Scholar profile
 - Profile image: public Google Scholar profile asset
-- Go-RIO figure: the public `wooseongY/Go-RIO` repository
-- MOANA preview: the public MOANA project publication image
