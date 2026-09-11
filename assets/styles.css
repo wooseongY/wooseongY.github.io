@@ -1196,7 +1196,7 @@ body::before {
 .profile-photo img {
   width: 230px;
   height: auto;
-  aspect-ratio: 99 / 128;
+  aspect-ratio: 551 / 709;
   border-radius: 6px;
   background: #f1f3f4;
   object-fit: cover;
