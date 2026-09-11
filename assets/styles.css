@@ -10,10 +10,10 @@
   --signal: #ffc857;
   --signal-soft: #fff0c9;
   --muted: #6e7983;
-  --shell: min(1180px, calc(100vw - 48px));
-  --serif: "Newsreader", Georgia, serif;
-  --sans: "Manrope", Arial, sans-serif;
-  --mono: "DM Mono", "SFMono-Regular", Consolas, monospace;
+  --shell: min(980px, calc(100vw - 48px));
+  --serif: "Roboto", Arial, sans-serif;
+  --sans: "Roboto", Arial, sans-serif;
+  --mono: "Roboto", Arial, sans-serif;
 }
 
 * {
@@ -1505,35 +1505,52 @@ body::before {
 }
 
 .hero {
-  padding-block: 78px 94px;
+  grid-template-columns: minmax(0, 1fr) 210px;
+  padding-block: 70px 84px;
+  gap: 58px;
 }
 
 .hero h1 {
-  margin-bottom: 26px;
-  font-size: clamp(3.4rem, 5.7vw, 5.2rem);
-  line-height: 0.96;
+  margin-bottom: 10px;
+  font-size: clamp(2.55rem, 4.5vw, 3.35rem);
+  font-weight: 400;
+  letter-spacing: -0.035em;
+  line-height: 1.08;
+}
+
+.profile-affiliation {
+  margin-bottom: 23px;
 }
 
 .hero-lede,
 .hero-summary {
   font-size: 16px;
-  line-height: 1.68;
+  line-height: 1.64;
+}
+
+.profile-photo,
+.profile-photo img {
+  width: 210px;
 }
 
 .section {
-  padding-block: 94px;
+  padding-block: 76px;
 }
 
 .section-kicker {
-  margin-bottom: 42px;
+  margin-bottom: 29px;
+  font-size: 12px;
 }
 
 .section-heading {
-  margin-bottom: 36px;
+  margin-bottom: 29px;
 }
 
 .section-heading h2 {
-  font-size: clamp(2.6rem, 4.2vw, 3.8rem);
+  font-size: clamp(1.85rem, 3vw, 2.2rem);
+  font-weight: 500;
+  letter-spacing: -0.025em;
+  line-height: 1.2;
 }
 
 .news-item {
@@ -1541,21 +1558,67 @@ body::before {
 }
 
 .news-item p {
-  font-size: 15px;
+  font-size: 16px;
+}
+
+.news-tag {
+  font-size: 12px;
+}
+
+.paper,
+.paper-featured {
+  grid-template-columns: 180px minmax(0, 1fr);
+}
+
+.paper-teaser {
+  width: 180px;
+  height: 122px;
+}
+
+.publication-list .paper {
+  padding: 26px 0;
+  gap: 24px;
 }
 
 .paper-body h2,
 .paper-body h3 {
-  font-size: clamp(1.3rem, 1.9vw, 1.7rem);
-  line-height: 1.22;
+  margin: 6px 0 10px;
+  font-family: var(--sans);
+  font-size: 1.16rem;
+  font-weight: 500;
+  letter-spacing: -0.015em;
+  line-height: 1.34;
+}
+
+.authors {
+  font-size: 14px;
+  line-height: 1.6;
+}
+
+.publication-list .venue {
+  font-size: 13px;
+  font-weight: 400;
+}
+
+.paper-links {
+  margin-top: 14px;
+}
+
+.paper-links a {
+  font-size: 12px;
 }
 
 .archive-heading h1 {
-  font-size: clamp(3.2rem, 5.8vw, 5.2rem);
+  font-size: clamp(2.45rem, 4.5vw, 3.2rem);
+  font-weight: 400;
+  letter-spacing: -0.035em;
+  line-height: 1.08;
 }
 
 .publication-year-heading {
-  font-size: 23px;
+  font-family: var(--sans);
+  font-size: 1.35rem;
+  font-weight: 400;
 }
 
 .site-footer {
@@ -1564,7 +1627,14 @@ body::before {
 
 @media (max-width: 980px) {
   .hero {
-    padding-block: 68px 82px;
+    grid-template-columns: minmax(0, 1fr) 190px;
+    padding-block: 62px 76px;
+    gap: 44px;
+  }
+
+  .profile-photo,
+  .profile-photo img {
+    width: 190px;
   }
 }
 
@@ -1582,12 +1652,14 @@ body::before {
   }
 
   .hero {
+    grid-template-columns: 1fr;
     padding-block: 50px 68px;
+    gap: 32px;
   }
 
   .hero h1 {
-    margin-bottom: 22px;
-    font-size: clamp(3rem, 14vw, 4.1rem);
+    margin-bottom: 9px;
+    font-size: clamp(2.35rem, 11vw, 2.9rem);
   }
 
   .section {
@@ -1595,15 +1667,35 @@ body::before {
   }
 
   .section-heading h2 {
-    font-size: clamp(2.35rem, 11vw, 3.2rem);
+    font-size: clamp(1.75rem, 8vw, 2rem);
+  }
+
+  .profile-photo,
+  .profile-photo img {
+    width: 154px;
+  }
+
+  .paper,
+  .paper-featured,
+  .publication-list .paper {
+    grid-template-columns: minmax(0, 1fr);
+  }
+
+  .paper-teaser {
+    width: min(100%, 320px);
+    height: 190px;
+  }
+
+  .paper.no-teaser .paper-body {
+    grid-column: 1;
   }
 
   .paper-body h2,
   .paper-body h3 {
-    font-size: 1.34rem;
+    font-size: 1.12rem;
   }
 
   .archive-heading h1 {
-    font-size: clamp(2.9rem, 14vw, 4rem);
+    font-size: clamp(2.25rem, 10vw, 2.75rem);
   }
 }
