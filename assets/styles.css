@@ -1294,7 +1294,7 @@ body::before {
 
 .publication-list .paper {
   grid-column: auto;
-  align-items: start;
+  align-items: center;
   padding: 32px 0;
   gap: 30px;
 }
@@ -1433,6 +1433,7 @@ body::before {
   }
 
   .publication-list .paper {
+    align-items: start;
     padding: 27px 0;
     gap: 19px;
   }
